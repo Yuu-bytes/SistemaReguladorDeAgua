@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: white !important;
     text-align: justify;
 }
 
@@ -7,6 +7,36 @@ body {
     width: 1000px;
     background-color: rgb(29, 29, 29);
     margin: -10px 125px;
+}
+
+
+
+/* Aqui começa o estilo do cabecalho da página */
+
+#cabecalho {
+    border-bottom: 1px dashed white;
+}
+
+#cabecalho h1 {
+    font: 26pt normal Arial, sans-serif;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 500px;
+    text-align: center;
+}
+
+#cabecalho h2 {
+    font: 20pt normal Arial, sans-serif;
+    padding: 0px;
+    margin-top: -15px;
+    width: 500px;
+    text-align: center;
+}
+
+#icone {
+    display: block;
+    float: left;
+    margin-left: 500px;
 }
 
 /* Aqui começa o menu do site */
@@ -54,27 +84,5 @@ body {
 }
 
 /* Aqui termina o menu do site */
-
-/* Aqui começa o estilo do cabecalho da página */
-
-#cabecalho {
-    border-bottom: 1px dashed white;
-}
-
-#cabecalho h1 {
-    font: 26pt normal Arial, sans-serif;
-    padding: 0px;
-    margin-bottom: 0px;
-    width: 500px;
-    text-align: center;
-}
-
-#cabecalho h2 {
-    font: 20pt normal Arial, sans-serif;
-    padding: 0px;
-    margin-top: -15px;
-    width: 500px;
-    text-align: center;
-}
 
 /* Aqui termina o estilo do cabecalho da página */
