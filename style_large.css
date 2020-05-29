@@ -1,6 +1,7 @@
 body {
-    color: white !important;
+    color: white;
     text-align: justify;
+    font-family: Arial, sans-serif;
 }
 
 #interface {
@@ -9,8 +10,6 @@ body {
     margin: -10px 125px;
 }
 
-
-
 /* Aqui começa o estilo do cabecalho da página */
 
 #cabecalho {
@@ -18,7 +17,7 @@ body {
 }
 
 #cabecalho h1 {
-    font: 26pt normal Arial, sans-serif;
+    font: 26pt Arial, sans-serif;
     padding: 0px;
     margin-bottom: 0px;
     width: 500px;
@@ -85,3 +84,31 @@ body {
 /* Aqui termina o menu do site */
 
 /* Aqui termina o estilo do cabecalho da página */
+
+#corpo {
+    width: 900px;
+    margin: auto;
+}
+
+#corpo p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.esquerda {
+    display: inline-block;
+}
+
+.esquerda img {
+    float: right;
+    margin: 15px 0px 0px 15px;
+}
+
+.direita {
+    display: inline-block;
+}
+
+.direita img {
+    float: left;
+    margin: 15px 15px 0px 0px;
+}

@@ -17,16 +17,20 @@
             <nav id="menu">
                 <!-- Aqui vai o menu do site -->
                 <ul>
-                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/home.png')"><a href="#">Home</a></li>
-                    <li onmousemove="mudaFoto('img/checkbox.png')" onmouseout="mudaFoto('img/home.png')"><a href="#">Objetivos</a></li>
-                    <li onmousemove="mudaFoto('img/media.png')" onmouseout="mudaFoto('img/home.png')"><a href="#">Mídia</a>
+                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/home.png')"><a
+                            href="#">Home</a></li>
+                    <li onmousemove="mudaFoto('img/checkbox.png')" onmouseout="mudaFoto('img/home.png')"><a
+                            href="#">Objetivos</a></li>
+                    <li onmousemove="mudaFoto('img/media.png')" onmouseout="mudaFoto('img/home.png')"><a
+                            href="#">Mídia</a>
                         <ul>
                             <!-- Aqui vai o submenu de Mídia -->
                             <li><a href="#">Fotos</a></li>
                             <li><a href="#">Vídeos</a></li>
                         </ul>
                     </li>
-                    <li onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/home.png')"><a href="#">Contato</a></li>
+                    <li onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/home.png')"><a
+                            href="#">Contato</a></li>
                 </ul>
             </nav> <!-- Aqui termina o menu do site -->
             <input type="image" src="img/home.png" alt="casa, home" id="icone">
@@ -35,43 +39,69 @@
                 <h2>Sistema regulador de água com Arduino</h2>
             </hgroup>
         </header> <!-- Aqui termina o cabecalho da página -->
-        <h1>Tema</h1>
-        <p>Internet das Coisas: Sistema regulador de água com Arduino.</p>
+        <div id="corpo"> <!-- Aqui começa o corpo do site -->
+            <div class="esquerda">
+                <img src="img/foto1.jpg" alt="">
+                <h1>Tema</h1>
+                <p>Internet das Coisas: Sistema regulador de água com Arduino.</p>
 
-        <h1>Delimitação do Tema</h1>
-        <p>O projeto tem como proposta a criação de um protótipo de sistema regulador de água usando um sensor detector
-            de nível de água que ao detectar um baixo nível de água abriria a válvula para encher o recipiente. O
-            sistema regulador de água foi desenvolvido usando o Arduino e um site com informações sobre o projeto e um
-            programa em Java para visualizar estatísticas do Arduino. Além disso, foi criado um servidor para ser
-            hospedado o site. Este projeto foi desenvolvido pelos estudantes do Curso Técnico em Informática Michael
-            Trage, Vanderson dos Santos e Ryan Zancanaro durante o período de Março à Julho de 2020.</p>
+                <h1>Delimitação do Tema</h1>
+                <p>O projeto tem como proposta a criação de um protótipo de sistema regulador de água usando um sensor
+                    detector
+                    de nível de água que ao detectar um baixo nível de água abriria a válvula para encher o recipiente.
+                    O
+                    sistema regulador de água foi desenvolvido usando o Arduino e um site com informações sobre o
+                    projeto e um
+                    programa em Java para visualizar estatísticas do Arduino. Além disso, foi criado um servidor para
+                    ser
+                    hospedado o site. Este projeto foi desenvolvido pelos estudantes do Curso Técnico em Informática
+                    Michael
+                    Trage, Vanderson dos Santos e Ryan Zancanaro durante o período de Março à Julho de 2020.</p>
+            </div>
+            <div class="direita">
+                <img src="img/foto1.jpg" alt="">
+                <h1>Problema</h1>
+                <p>Existe uma dificuldade regular a quantia de água de um recipiente na agropecuária que é bastante
+                    usado,
+                    poderia um Arduino ser capaz de tornar isso automático?</p>
 
-        <h1>Problema</h1>
-        <p>Existe uma dificuldade regular a quantia de água de um recipiente na agropecuária que é bastante usado,
-            poderia um Arduino ser capaz de tornar isso automático?</p>
+                <h1>Hipóteses</h1>
+                <p>Com um arduino dá para implementar várias funções num só equipamento.<br>
+                    Um sistema em arduino poderia facilitar o trabalho substituindo a mão de obra humana.<br>
+                    Não precisa de conexão à internet para funcionar.</p>
 
-        <h1>Hipóteses</h1>
-        <p>Com um arduino dá para implementar várias funções num só equipamento.<br>
-            Um sistema em arduino poderia facilitar o trabalho substituindo a mão de obra humana.<br>
-            Não precisa de conexão à internet para funcionar.</p>
-
-        <h1>Objetivo Geral</h1>
-        <p>Criar um protótipo de sistema regulador de água em Arduíno.</p>
-
-        <h1>Justificativa</h1>
-        <p>A população mundial cresce mais e mais e desta forma é preciso que a produção de alimentos cresça ainda mais
-            para poder alimentar toda essa população, e esse aumento na produção de alimentos se deve principalmente
-            pela evolução na tecnologia no ramo da agropecuária, algumas das principais evoluções que contribuem para o
-            melhor desempenho na agropecuária são a robótica, com máquinas autônomas por exemplo tem um grande
-            rendimento na produção, a inteligência artificial, que é muito usada na análise de dados como monitorar a
-            saúde e peso de um animal, sensores, que são muito importantes na coleta de informações, entre outros. </p>
-        <p>Já quando o uso de água é constante na área de agropecuária e não tem nenhum sistema automático para manter
-            os reservatórios com água tem que fazer tudo automaticamente, o que se torna um pouco complicado, já que tem
-            que checar os reservatórios e abrir o registro de água e então fechar, antes que vaze principalmente quando
-            se tem vários recipientes que precisam sempre estar prontos para abastecer água a plantas ou animais, o
-            projeto tem o objetivo de fazer um sistema que faria isso automaticamente e ainda teria um site com todas as
-            informações do projeto e um sistema que ao conectar o arduino em um computador teria estatísticas sobre as
-            últimas 24h.</p>
+                <h1>Objetivo Geral</h1>
+                <p>Criar um protótipo de sistema regulador de água em Arduíno.</p>
+            </div>
+            <div class="esquerda">
+                <img src="img/foto1.jpg" alt="">
+                <h1>Justificativa</h1>
+                <p>A população mundial cresce mais e mais e desta forma é preciso que a produção de alimentos cresça
+                    ainda mais
+                    para poder alimentar toda essa população, e esse aumento na produção de alimentos se deve
+                    principalmente
+                    pela evolução na tecnologia no ramo da agropecuária, algumas das principais evoluções que contribuem
+                    para o
+                    melhor desempenho na agropecuária são a robótica, com máquinas autônomas por exemplo tem um grande
+                    rendimento na produção, a inteligência artificial, que é muito usada na análise de dados como
+                    monitorar a
+                    saúde e peso de um animal, sensores, que são muito importantes na coleta de informações, entre
+                    outros. </p>
+                <p>Já quando o uso de água é constante na área de agropecuária e não tem nenhum sistema automático para
+                    manter
+                    os reservatórios com água tem que fazer tudo automaticamente, o que se torna um pouco complicado, já
+                    que tem
+                    que checar os reservatórios e abrir o registro de água e então fechar, antes que vaze principalmente
+                    quando
+                    se tem vários recipientes que precisam sempre estar prontos para abastecer água a plantas ou
+                    animais, o
+                    projeto tem o objetivo de fazer um sistema que faria isso automaticamente e ainda teria um site com
+                    todas as
+                    informações do projeto e um sistema que ao conectar o arduino em um computador teria estatísticas
+                    sobre as
+                    últimas 24h.</p>
+            </div>
+        </div> <!-- Aqui termina o corpo da página -->
     </div>
 </body>
 
