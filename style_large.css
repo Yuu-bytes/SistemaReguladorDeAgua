@@ -104,7 +104,7 @@ body {
 }
 
 .direita h1 {
-    width: 900px !important;
+    margin-left: 320px;
 }
 
 #corpo p {
