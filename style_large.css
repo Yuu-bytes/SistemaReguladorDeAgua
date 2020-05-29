@@ -8,6 +8,7 @@ body {
     width: 1000px;
     background-color: rgb(29, 29, 29);
     margin: -10px 125px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Aqui começa o estilo do cabecalho da página */
@@ -44,6 +45,11 @@ body {
     margin-top: -30px;
 }
 
+#menu li:hover {
+    transition: 0.5s;
+    background-color: rgb(73, 72, 72);
+}
+
 #menu ul {
     padding: 0px;
 }
@@ -66,6 +72,7 @@ body {
 
 #menu ul ul li {
     margin: -5px;
+    margin-top: 5px;
 }
 
 #menu ul li:hover > ul{
@@ -85,9 +92,19 @@ body {
 
 /* Aqui termina o estilo do cabecalho da página */
 
+/* Aqui começa o corpo do site */
 #corpo {
     width: 900px;
     margin: auto;
+}
+
+#corpo h1{
+    background-color: rgb(48, 47, 47);
+    width: 580px;
+}
+
+.direita h1 {
+    width: 900px !important;
 }
 
 #corpo p {
@@ -101,7 +118,7 @@ body {
 
 .esquerda img {
     float: right;
-    margin: 15px 0px 0px 15px;
+    margin: 15px 0px 0px 20px;
 }
 
 .direita {
@@ -110,5 +127,7 @@ body {
 
 .direita img {
     float: left;
-    margin: 15px 15px 0px 0px;
+    margin: 20px 20px 0px 0px;
 }
+
+/* Aqui termina o corpo do site */
