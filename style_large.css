@@ -131,3 +131,14 @@ body {
 }
 
 /* Aqui termina o corpo do site */
+
+/* Rodapé do site */
+footer {
+    width: auto;
+    height: 50px;
+    background-color: rgb(48, 47, 47);
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px 0px 0px 0px;
+    border-top: 1px black solid;
+}
