@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_large.css">
+    <script src="funcao.js"></script>
+    <title>Sistema regulador de água com Arduino</title>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <!-- Aqui começa o cabecalho da página -->
+
+            <nav id="menu">
+                <!-- Aqui vai o menu do site -->
+                <ul>
+                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/email.png')"><a
+                            href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto('img/checkbox.png')" onmouseout="mudaFoto('img/email.png')"><a
+                            href="#">Objetivos</a></li>
+                    <li onmousemove="mudaFoto('img/media.png')" onmouseout="mudaFoto('img/email.png')"><a
+                            href="#">Mídia</a>
+                        <ul>
+                            <!-- Aqui vai o submenu de Mídia -->
+                            <li><a href="#">Fotos</a></li>
+                            <li><a href="#">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/email.png')"><a
+                            href="contato.html">Contato</a></li>
+                </ul>
+            </nav> <!-- Aqui termina o menu do site -->
+            <input type="image" src="img/email.png" alt="casa, home" id="icone">
+            <hgroup>
+                <h1>Internet das Coisas</h1><br>
+                <h2>Sistema regulador de água com Arduino</h2>
+            </hgroup>
+        </header> <!-- Aqui termina o cabecalho da página -->
+        <div id="corpo">
+            <!-- Aqui começa o corpo do site -->
+            <form action="https://formspree.io/mvowaakv" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        Digite seu nome:
+                    </td>
+                    <td>
+                        <input type="text" size="40" name="nome" id="inome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Digite seu email:
+                    </td>
+                    <td>
+                        <input type="text" size="40" name="email" id="iemail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Digite sua mensagem:
+                    </td>
+                    <td>
+                        <textarea rows="10" cols="60" name="mensagem"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar mensagem">
+                    </td>
+                </tr>
+            </table>
+        </div> <!-- Aqui termina o corpo da página -->
+        <footer>
+            Copyright &copy; 2020 - by: Michael Trage, Vanderson dos Santos, Ryan Zancanaro.
+        </footer>
+    </div>
+</body>
+
+</html>
