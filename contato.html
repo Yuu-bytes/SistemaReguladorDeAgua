@@ -41,41 +41,31 @@
         </header> <!-- Aqui termina o cabecalho da página -->
         <div id="corpo">
             <!-- Aqui começa o corpo do site -->
-            <form action="https://formspree.io/mvowaakv" method="POST">
-            <table>
-                <tr>
-                    <td>
-                        Digite seu nome:
-                    </td>
-                    <td>
-                        <input type="text" size="40" name="nome" id="inome">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Digite seu email:
-                    </td>
-                    <td>
-                        <input type="text" size="40" name="email" id="iemail">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Digite sua mensagem:
-                    </td>
-                    <td>
-                        <textarea rows="10" cols="60" name="mensagem"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="Enviar mensagem">
-                    </td>
-                </tr>
-            </table>
+            <hgroup class="descricao">
+                <h2>Entre em contato</h2>
+                <h3>Atualizado 04/06/2020</h3>
+            </hgroup>
+            <form action="https://formspree.io/mvowaakv" method="POST" id="formulario">
+                <fieldset>
+                    <legend>NOS CONTATE</legend>
+
+                    <p>Nome</p>
+
+                    <input type="text" size="40" name="nome" id="inome">
+
+                    <p>E-mail</p>
+
+                    <input type="email" size="40" name="email" id="iemail">
+
+                    <p>Sua mensagem</p>
+
+                    <textarea rows="10" cols="65" name="mensagem"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Enviar mensagem">
         </div> <!-- Aqui termina o corpo da página -->
         <footer>
-            Copyright &copy; 2020 - by: Michael Trage, Vanderson dos Santos, Ryan Zancanaro.
+            Copyright &copy; 2020 - by: Michael Trage, Vanderson dos Santos e Ryan Zancanaro.
         </footer>
     </div>
 </body>

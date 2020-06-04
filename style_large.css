@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     color: white;
     text-align: justify;
@@ -130,7 +132,48 @@ body {
     margin: 20px 20px 0px 0px;
 }
 
+.descricao {
+    font-family: 'Roboto', sans-serif;
+}
+
+.descricao h2 {
+    margin-top: 20pt;
+    font-size: 20pt;
+    margin-bottom: 0px;
+}
+
+.descricao h3 {
+    margin-top: 0px;
+    font-size: 13pt;
+    text-align: right;
+}
+
 /* Aqui termina o corpo do site */
+
+/* Aqui começa o formulário do site */
+
+#formulario {
+    width: 500px;
+    margin-left: 90px;
+}
+
+#formulario fieldset {
+    border-color: white;
+}
+
+#formulario input,textarea {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 13pt;
+}
+
+#formulario p {
+    margin: 5px 0px;
+    margin-top: 15px;
+    text-indent: 0px;
+    font-size: 15pt;
+}
+
+/* Aqui termina o formulário do site */
 
 /* Rodapé do site */
 footer {
