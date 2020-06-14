@@ -162,7 +162,7 @@ body {
 }
 
 #formulario input,textarea {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 13pt;
 }
 
@@ -171,6 +171,21 @@ body {
     margin-top: 15px;
     text-indent: 0px;
     font-size: 15pt;
+}
+
+input, submit {
+    margin-top: 5px;
+}
+
+fieldset {
+    background: url("img/contato.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 95% 95%;
+}
+
+#enviar {
+    background-color: blue;
 }
 
 /* Aqui termina o formulário do site */
