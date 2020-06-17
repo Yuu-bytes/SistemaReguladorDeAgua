@@ -1,15 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body {
-    color: white;
-    text-align: justify;
-    font-family: Arial, sans-serif;
-}
 
 #interface {
-    width: 1000px;
     background-color: rgb(29, 29, 29);
-    margin: -10px 125px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -23,7 +14,6 @@ body {
     font: 26pt Arial, sans-serif;
     padding: 0px;
     margin-bottom: 0px;
-    width: 500px;
     text-align: center;
 }
 
@@ -31,7 +21,6 @@ body {
     font: 20pt normal Arial, sans-serif;
     padding: 0px;
     margin-top: -15px;
-    width: 500px;
     text-align: center;
 }
 
@@ -42,18 +31,10 @@ body {
 
 /* Aqui começa o menu do site */
 
-#menu {
-    margin-left: 580px;
-    margin-top: -30px;
-}
 
 #menu li:hover {
     transition: 0.5s;
     background-color: rgb(73, 72, 72);
-}
-
-#menu ul {
-    padding: 0px;
 }
 
 #menu ul li {
@@ -64,7 +45,6 @@ body {
     padding: 5px;
     background-color: rgb(48, 48, 48);
     text-align: center;
-    line-height: 30px;
     margin: 2px;
 }
 
@@ -74,7 +54,9 @@ body {
 
 #menu ul ul li {
     margin: -5px;
-    margin-top: 5px;
+    margin-left: -45px;
+    margin-top: 0px;
+    padding: 5px;
 }
 
 #menu ul li:hover > ul{
@@ -95,45 +77,9 @@ body {
 /* Aqui termina o estilo do cabecalho da página */
 
 /* Aqui começa o corpo do site */
-#corpo {
-    width: 900px;
-    margin: auto;
-}
 
 #corpo h1{
     background-color: rgb(48, 47, 47);
-    width: 580px;
-}
-
-.direita h1 {
-    margin-left: 320px;
-}
-
-#corpo p {
-    text-indent: 50px;
-    text-align: justify;
-}
-
-.esquerda {
-    display: inline-block;
-}
-
-.esquerda img {
-    float: right;
-    margin: 15px 0px 0px 20px;
-}
-
-.direita {
-    display: inline-block;
-}
-
-.direita img {
-    float: left;
-    margin: 20px 20px 0px 0px;
-}
-
-.descricao {
-    font-family: 'Roboto', sans-serif;
 }
 
 .descricao h2 {
@@ -192,11 +138,8 @@ fieldset {
 
 /* Rodapé do site */
 footer {
-    width: auto;
-    height: 50px;
     background-color: rgb(48, 47, 47);
     text-align: center;
-    margin-top: 10px;
-    padding: 30px 0px 0px 0px;
+    padding: 20px 0px 0px 20px;
     border-top: 1px black solid;
 }

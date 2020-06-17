@@ -4,94 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_large.css"
+    <link rel="stylesheet" href="style_large.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <script src="funcao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Sistema regulador de água com Arduino</title>
 </head>
 
 <body>
-    <div id="interface">
+    <div id="interface" class="container text-break">
         <header id="cabecalho">
             <!-- Aqui começa o cabecalho da página -->
+            <!-- Aqui começa o menu do site -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <nav id="menu">
-                <!-- Aqui vai o menu do site -->
-                <ul>
-                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/home.png')">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li onmousemove="mudaFoto('img/checkbox.png')" onmouseout="mudaFoto('img/home.png')">
-                        <a href="objetivos.html">Objetivos</a>
-                    </li>
-                    <li onmousemove="mudaFoto('img/media.png')" onmouseout="mudaFoto('img/home.png')">
-                        Mídia
-                        <ul>
-                            <!-- Aqui vai o submenu de Mídia -->
-                            <li><a href="#">Fotos</a></li>
-                            <li><a href="#">Vídeos</a></li>
-                        </ul>
-                    </li>
-                    <li onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/home.png')">
-                        <a href="contato.html">Contato</a>
-                    </li>
-                </ul>
-            </nav> <!-- Aqui termina o menu do site -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/home.png')">
+                                Home <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" onmousemove="mudaFoto('img/checkbox.png')" onmouseout="mudaFoto('img/home.png')">
+                            <a class="nav-link" href="objetivos.html">Objetivos</a>
+                        </li>
+                        <li class="nav-item dropdown" onmousemove="mudaFoto('img/media.png')" onmouseout="mudaFoto('img/home.png')">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mídia
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Fotos</a>
+                                <a class="dropdown-item" href="#">Vídeos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/home.png')">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Aqui termina o menu do site -->
+
             <input type="image" src="img/home.png" alt="casa, home" id="icone">
-            <hgroup>
+            <hgroup class="col-6">
                 <h1>Internet das Coisas</h1>
                 <br>
                 <h2>Sistema regulador de água com Arduino</h2>
             </hgroup>
         </header> <!-- Aqui termina o cabecalho da página -->
-        <div id="corpo">
+        <div class="container" id="corpo">
             <!-- Aqui começa o corpo do site -->
-            <div class="esquerda">
-                <img src="img/foto1.jpg" alt="">
-                <hgroup class="descricao">
-                    <h2>Sobre o projeto</h2>
-                    <h3>Atualizado 16/06/2020</h3>
-                </hgroup>
-                <h1>Tema</h1>
-                <p>Internet das Coisas: Sistema regulador de água com Arduino.</p>
+            <hgroup class="descricao">
+                <h2>Sobre o projeto</h2>
+                <h3>Atualizado 16/06/2020</h3>
+            </hgroup>
+            <div class="row mb-3">
+                <div class="col-lg-8">
+                    <h1>Tema</h1>
+                    <p>Internet das Coisas: Sistema regulador de água com Arduino.</p>
 
-                <h1>Delimitação do Tema</h1>
-                <p>O projeto tem como proposta a criação de um protótipo de sistema regulador de água usando um sensor detector de nível de água que ao detectar um baixo nível de água abriria a válvula para encher o recipiente. O sistema regulador de água foi desenvolvido usando o Arduino e foi desenvolvido um site com informações sobre o projeto para a sua divulgação e um programa que pode cadastrar as horas que foi ativado o sistema regulador de água. Além disso, foi criado um servidor para ser hospedado o site. Este projeto foi desenvolvido pelos estudantes do Curso Técnico em Informática Michael Trage, Vanderson dos Santos e Ryan Zancanaro durante o período de Março à Julho de 2020.</p>
+                    <h1>Delimitação do Tema</h1>
+                    <p>O projeto tem como proposta a criação de um protótipo de sistema regulador de água usando um sensor detector de nível de água que ao detectar um baixo nível de água abriria a válvula para encher o recipiente. O sistema regulador de água foi desenvolvido usando o Arduino e foi desenvolvido um site com informações sobre o projeto para a sua divulgação e um programa que pode cadastrar as horas que foi ativado o sistema regulador de água. Além disso, foi criado um servidor para ser hospedado o site. Este projeto foi desenvolvido pelos estudantes do Curso Técnico em Informática Michael Trage, Vanderson dos Santos e Ryan Zancanaro durante o período de Março à Julho de 2020.</p>
+                </div>
+            <div class="col-lg-4">
+                    <img src="img/foto1.jpg" alt="">
+                </div>
             </div>
-            <div class="direita">
-                <img src="img/foto1.jpg" alt="">
-                <h1>Problema</h1>
-                <p>
-                    Existe uma dificuldade regular a quantia de água de um recipiente na agropecuária que é bastante
-                    usado, poderia um Arduino ser capaz de tornar isso automático?
-                </p>
+            <div class="row mb-3">
+                <div class="col-lg-4">
+                    <img src="img/foto1.jpg" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <h1>Problema</h1>
+                    <p>
+                        Existe uma dificuldade regular a quantia de água de um recipiente na agropecuária que é bastante
+                        usado, poderia um Arduino ser capaz de tornar isso automático?
+                    </p>
 
-                <h1>Hipóteses</h1>
-                <p>Com um arduino dá para implementar várias funções num só equipamento.</p>
-                <p>Um sistema em arduino poderia facilitar o trabalho substituindo a mão de obra humana.</p>
-                <p>Não precisa de conexão à internet para funcionar.</p>
+                    <h1>Hipóteses</h1>
+                    <p>Com um arduino dá para implementar várias funções num só equipamento.</p>
+                    <p>Um sistema em arduino poderia facilitar o trabalho substituindo a mão de obra humana.</p>
+                    <p>Não precisa de conexão à internet para funcionar.</p>
 
-                <h1>Objetivo Geral</h1>
-                <p>Criar um protótipo de sistema regulador de água em Arduíno.</p>
+                    <h1>Objetivo Geral</h1>
+                    <p>Criar um protótipo de sistema regulador de água em Arduíno.</p>
+                </div>
             </div>
-            <div class="esquerda">
-                <img src="img/foto1.jpg" alt="">
-                <h1>Justificativa</h1>
-                <p>
-                    A população mundial cresce mais e mais e desta forma é preciso que a produção de alimentos cresça
-                    ainda mais
-                    para poder alimentar toda essa população, e esse aumento na produção de alimentos se deve
-                    principalmente
-                    pela evolução na tecnologia no ramo da agropecuária, algumas das principais evoluções que contribuem
-                    para o
-                    melhor desempenho na agropecuária são a robótica, com máquinas autônomas por exemplo tem um grande
-                    rendimento na produção, a inteligência artificial, que é muito usada na análise de dados como
-                    monitorar a
-                    saúde e peso de um animal, sensores, que são muito importantes na coleta de informações, entre
-                    outros.
-                </p>
-                <p>
-                    Já quando o uso de água é constante na área de agropecuária e não tem nenhum sistema automático para manter os reservatórios com água tem que fazer tudo automaticamente, o que se torna um pouco complicado, já que tem que checar os reservatórios e abrir o registro de água e então fechar, antes que vaze principalmente quando se tem vários recipientes que precisam sempre estar prontos para abastecer água a plantas ou animais, o projeto tem o objetivo de fazer um sistema que faria isso automaticamente e ainda teria um site com todas as informações do projeto e um sistema que poderia cadastrar as horas que foi ativado o sistema regulador de água para ter um controle de gastos.
-                </p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Justificativa</h1>
+                    <p>
+                        A população mundial cresce mais e mais e desta forma é preciso que a produção de alimentos cresça
+                        ainda mais
+                        para poder alimentar toda essa população, e esse aumento na produção de alimentos se deve
+                        principalmente
+                        pela evolução na tecnologia no ramo da agropecuária, algumas das principais evoluções que contribuem
+                        para o
+                        melhor desempenho na agropecuária são a robótica, com máquinas autônomas por exemplo tem um grande
+                        rendimento na produção, a inteligência artificial, que é muito usada na análise de dados como
+                        monitorar a
+                        saúde e peso de um animal, sensores, que são muito importantes na coleta de informações, entre
+                        outros.
+                    </p>
+                    <p>
+                        Já quando o uso de água é constante na área de agropecuária e não tem nenhum sistema automático para manter os reservatórios com água tem que fazer tudo automaticamente, o que se torna um pouco complicado, já que tem que checar os reservatórios e abrir o registro de água e então fechar, antes que vaze principalmente quando se tem vários recipientes que precisam sempre estar prontos para abastecer água a plantas ou animais, o projeto tem o objetivo de fazer um sistema que faria isso automaticamente e ainda teria um site com todas as informações do projeto e um sistema que poderia cadastrar as horas que foi ativado o sistema regulador de água para ter um controle de gastos.
+                    </p>
+                </div>
+            <div class="col-lg-4">
+                    <img src="img/foto1.jpg" alt="">
+                </div>
             </div>
         </div> <!-- Aqui termina o corpo da página -->
         <footer>
