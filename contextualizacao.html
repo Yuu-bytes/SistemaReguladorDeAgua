@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -24,12 +24,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html" onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/home.png')">
                                 Home <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item" onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/home.png')">
+                        <li class="nav-item active" onmousemove="mudaFoto('img/email.png')" onmouseout="mudaFoto('img/home.png')">
                             <a class="nav-link" href="contextualizacao.html">Contextualização</a>
                         </li>
                         
@@ -63,57 +63,65 @@
         <div class="container" id="corpo">
             <!-- Aqui começa o corpo do site -->
             <hgroup class="descricao">
-                <h2>Sobre o projeto</h2>
+                <h2>Contextualização</h2>
                 <h3>Atualizado 22/06/2020</h3>
             </hgroup>
             <div class="row mb-3">
                 <div class="col-lg-8">
-                    <h1>Quem somos?</h1>
-                    <p>
-                        Bom dia a todos, nós, Michael Trage, Vanderson dos Santos e Ryan Zancanaro,
-                        somos do 3° Semestre do Curso Técnico em Informática da SETREM
-                        e temos como objetivo fazer um projeto voltado na área de Agro.
-                    </p>
-                    <h1>Sobre o que é?</h1>
-                    <p>O projeto tem como o objetivo o desenvolvimento de um protótipo em Arduino
-                        com a função de regular de forma totalmente automática o nível de água
-                        de recipientes voltados para a agro, como por exemplo tanques de água para as
-                        plantas ou cochos de água de animais.
-                    </p>
+                    <h1>Tema</h1>
+                    <p>Internet das Coisas: Sistema regulador de água com Arduino.</p>
+
+                    <h1>Delimitação do Tema</h1>
+                    <p>O projeto tem como proposta a criação de um protótipo de sistema regulador de água usando um sensor detector de nível de água que ao detectar um baixo nível de água abriria a válvula para encher o recipiente. O sistema regulador de água foi desenvolvido usando o Arduino e foi desenvolvido um site com informações sobre o projeto para a sua divulgação e um programa que pode cadastrar as horas que foi ativado o sistema regulador de água. Além disso, foi criado um servidor para ser hospedado o site. Este projeto foi desenvolvido pelos estudantes do Curso Técnico em Informática Michael Trage, Vanderson dos Santos e Ryan Zancanaro durante o período de Março à Julho de 2020.</p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <img src="img/foto1.jpg">
+            <div class="col-lg-4 text-center">
+                    <img src="img/agro.jpg" alt="">
                 </div>
             </div>
-                <div class="row mb-3">
-                    <div class="col-lg-4 text-center mb-3">
-                        <img src="img/foto1.jpg">
-                    </div>
-                    <div class="col-lg-4 text-center mb-3">
-                        <img src="img/foto1.jpg">
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <img src="img/foto1.jpg">
-                    </div>
+            <div class="row mb-3">
+                <div class="col-lg-4 text-center">
+                    <img src="img/arduino.jpg" alt="">
                 </div>
-                <div class="row md-3">
-                    <div class="col-lg-8">
-                        <h1>Como funciona?</h1>
-                        <p>
-                            O protótipo usa sensores chamados Sensor de nível de água com boia horizontal
-                            que captam se possui água ou não aonde está posisionado o sensor, então com isso
-                            ao usar vários sensores dá para ter uma noção em quanto está o nível da água,
-                            nesse protótipo usamos apenas 2, então só temos a informação se está vazio ou cheio
-                            , quando o sensor que fica perto do fundo detecta que não tem mais água ali ele manda
-                            um sinal para o Arduino que ativa uma válvula de água, e essa válvula de água fica ativa
-                            até o outro sensor que fica mais perto do topo detectar que tem água ali, então ela é desligada.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <img src="img/foto1.jpg">
-                    </div>
+                <div class="col-lg-8">
+                    <h1>Problema</h1>
+                    <p>
+                        Existe uma dificuldade regular a quantia de água de um recipiente na agropecuária que é bastante
+                        usado, poderia um Arduino ser capaz de tornar isso automático?
+                    </p>
+
+                    <h1>Hipóteses</h1>
+                    <p>Com um arduino dá para implementar várias funções num só equipamento.</p>
+                    <p>Um sistema em arduino poderia facilitar o trabalho substituindo a mão de obra humana.</p>
+                    <p>Não precisa de conexão à internet para funcionar.</p>
+
+                    <h1>Objetivo Geral</h1>
+                    <p>Criar um protótipo de sistema regulador de água em Arduíno.</p>
                 </div>
-            
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Justificativa</h1>
+                    <p>
+                        A população mundial cresce mais e mais e desta forma é preciso que a produção de alimentos cresça
+                        ainda mais
+                        para poder alimentar toda essa população, e esse aumento na produção de alimentos se deve
+                        principalmente
+                        pela evolução na tecnologia no ramo da agropecuária, algumas das principais evoluções que contribuem
+                        para o
+                        melhor desempenho na agropecuária são a robótica, com máquinas autônomas por exemplo tem um grande
+                        rendimento na produção, a inteligência artificial, que é muito usada na análise de dados como
+                        monitorar a
+                        saúde e peso de um animal, sensores, que são muito importantes na coleta de informações, entre
+                        outros.
+                    </p>
+                    <p>
+                        Já quando o uso de água é constante na área de agropecuária e não tem nenhum sistema automático para manter os reservatórios com água tem que fazer tudo automaticamente, o que se torna um pouco complicado, já que tem que checar os reservatórios e abrir o registro de água e então fechar, antes que vaze principalmente quando se tem vários recipientes que precisam sempre estar prontos para abastecer água a plantas ou animais, o projeto tem o objetivo de fazer um sistema que faria isso automaticamente e ainda teria um site com todas as informações do projeto e um sistema que poderia cadastrar as horas que foi ativado o sistema regulador de água para ter um controle de gastos.
+                    </p>
+                </div>
+            <div class="col-lg-4 text-center">
+                    <img src="img/vaca.jpg" alt="">
+                </div>
+            </div>
         </div>
         <footer>
             Copyright &copy; 2020 - by: Michael Trage, Vanderson dos Santos e Ryan Zancanaro.
